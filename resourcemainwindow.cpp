@@ -9,6 +9,8 @@ ResourceMainWindow::ResourceMainWindow(QWidget *parent)
     // 初始化Toolbar
     createToolBars();
 
+
+
     setWindowTitle(tr("Resource Commit Management"));
     setWindowIcon(QIcon(":/images/icon.png"));
 
