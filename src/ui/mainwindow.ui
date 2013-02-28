@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="30,70">
+    <item>
+     <widget class="QTreeView" name="treeView">
+      <property name="textElideMode">
+       <enum>Qt::ElideLeft</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="60,40">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabFiles">
+         <attribute name="title">
+          <string>Files</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tabStorages">
+         <attribute name="title">
+          <string>Storages</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="textInteractionFlags">
+         <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_SVN_Storage"/>
+    <addaction name="actionCreate_GIT_Storage"/>
+    <addaction name="separator"/>
+    <addaction name="actionCheck_Storages_Connection"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <addaction name="actionAdd_PLY_Files"/>
+    <addaction name="actionCommit"/>
+    <addaction name="separator"/>
+    <addaction name="actionCheck_Files_Validation"/>
+    <addaction name="actionSetting"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOption"/>
+  </widget>
+  <action name="actionCreate_SVN_Storage">
+   <property name="text">
+    <string>Create SVN Storage</string>
+   </property>
+  </action>
+  <action name="actionCreate_GIT_Storage">
+   <property name="text">
+    <string>Create GIT Storage</string>
+   </property>
+  </action>
+  <action name="actionCheck_Storages_Connection">
+   <property name="text">
+    <string>Check Storages Connection</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCreate_PL_Files">
+   <property name="text">
+    <string>Create PL Files</string>
+   </property>
+  </action>
+  <action name="actionAdd_PLY_Files">
+   <property name="text">
+    <string>Add PLY Files</string>
+   </property>
+  </action>
+  <action name="actionCommit">
+   <property name="text">
+    <string>Commit</string>
+   </property>
+  </action>
+  <action name="actionCheck_File_Validation">
+   <property name="text">
+    <string>Check File Validation</string>
+   </property>
+  </action>
+  <action name="actionCheck_Files_Validation">
+   <property name="text">
+    <string>Check Files Validation</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

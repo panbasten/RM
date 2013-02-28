@@ -12,10 +12,25 @@ TARGET = RM
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        resourcemainwindow.cpp
+SOURCES += src/main.cpp\
+    src/ui/mainwindow.cpp \
+    src/storage/svnstorage.cpp \
+    src/ui/settingdialog.cpp
 
-HEADERS  += resourcemainwindow.h
+HEADERS  += \
+    src/ui/mainwindow.h \
+    src/storage/svnstorage.h \
+    src/ui/settingdialog.h
 
 RESOURCES += \
     rm.qrc
+
+FORMS += \
+    src/ui/mainwindow.ui \
+    src/ui/settingdialog.ui
+
+
+INCLUDEPATH += include
+INCLUDEPATH += src/ui
+INCLUDEPATH += src/storage
+INCLUDEPATH += src/util
